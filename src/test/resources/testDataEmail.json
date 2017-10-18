@@ -1,0 +1,134 @@
+[
+  {
+    "description": "Test Email Address is longer than 30",
+    "isExpectSuccess":false,
+    "isJunmpToResultPage":false,
+    "expectedErrorList":[],
+    "page_data": {
+      "emailAddress": "123456789012345678901234567890@zerozero.cn",
+      "quantity": 2,
+      "cardNumber": "4242424242424242",
+      "cvc": "896",
+      "expireMon": "09",
+      "expireYear": "2016",
+      "name": "userForTestPreOrder",
+      "line1": "AddressfortestLine1 ",
+      "line2": "",
+      "city": "CityTest",
+      "state": "StateTest",
+      "postalCode": "96032",
+      "country": "United States",
+      "isAgree": true
+    }
+  },
+  {
+    "description": "Test Email Address Format is invalid, no @",
+    "isExpectSuccess":false,
+    "isJunmpToResultPage":false,
+    "expectedErrorList":["Please enter a valid email address."],
+    "page_data": {
+      "emailAddress": "123456789012",
+      "quantity": 2,
+      "cardNumber": "4242424242424242",
+      "cvc": "896",
+      "expireMon": "09",
+      "expireYear": "2016",
+      "name": "userForTestPreOrder",
+      "line1": "AddressfortestLine1",
+      "line2": "",
+      "city": "CityTest",
+      "state": "StateTest",
+      "postalCode": "96032",
+      "country": "United States",
+      "isAgree": true
+    }
+  },
+  {
+  "description": "Test Email Address Format is invalid, without postfix",
+  "isExpectSuccess":false,
+  "isJunmpToResultPage":false,
+  "expectedErrorList":["Please enter a valid email address."],
+  "page_data": {
+    "emailAddress": "123456789012@qq",
+    "quantity": 2,
+    "cardNumber": "4242424242424242",
+    "cvc": "896",
+    "expireMon": "09",
+    "expireYear": "2016",
+    "name": "userForTestPreOrder",
+    "line1": "AddressfortestLine1",
+    "line2": "",
+    "city": "CityTest",
+    "state": "StateTest",
+    "postalCode": "96032",
+    "country": "United States",
+    "isAgree": true
+    }
+  },
+  {
+    "description": "Test Email Address is Null",
+    "isExpectSuccess":false,
+    "isJunmpToResultPage":false,
+    "expectedErrorList":["This field is required."],
+    "page_data": {
+      "emailAddress": "    ",
+      "quantity": 2,
+      "cardNumber": "4242424242424242",
+      "cvc": "896",
+      "expireMon": "09",
+      "expireYear": "2016",
+      "name": "userForTestPreOrder",
+      "line1": "AddressfortestLine1",
+      "line2": "",
+      "city": "CityTest",
+      "state": "StateTest",
+      "postalCode": "96032",
+      "country": "United States",
+      "isAgree": true
+    }
+  },
+  {
+    "description": "Test Email Address including blank",
+    "isExpectSuccess":false,
+    "isJunmpToResultPage":false,
+    "expectedErrorList":["Please enter a valid email address."],
+    "page_data": {
+      "emailAddress": "  1@qq.cn   ",
+      "quantity": 2,
+      "cardNumber": "4242424242424242",
+      "cvc": "896",
+      "expireMon": "09",
+      "expireYear": "2016",
+      "name": "userForTestPreOrder",
+      "line1": "AddressfortestLine1",
+      "line2": "",
+      "city": "CityTest",
+      "state": "StateTest",
+      "postalCode": "96032",
+      "country": "United States",
+      "isAgree": true
+    }
+  },
+  {
+    "description": "Test Email Address is correct",
+    "isExpectSuccess":true,
+    "isJunmpToResultPage":true,
+    "expectedErrorList":[],
+    "page_data": {
+      "emailAddress": "yangfan01@zerozero.cn",
+      "quantity": 2,
+      "cardNumber": "4242424242424242",
+      "cvc": "896",
+      "expireMon": "11",
+      "expireYear": "2017",
+      "name": "userForTestPreOrder",
+      "line1": "AddressfortestLine1",
+      "line2": "",
+      "city": "CityTest",
+      "state": "StateTest",
+      "postalCode": "96032",
+      "country": "United States",
+      "isAgree": true
+    }
+  }
+]

@@ -1,0 +1,134 @@
+[
+  {
+    "description": "Fail Order: CVC check fail",
+    "isExpectSuccess":false,
+    "isJunmpToResultPage":true,
+    "expectedErrorList":[],
+    "page_data": {
+      "emailAddress": "yangfan01@zerozero.cn",
+      "quantity": 2,
+      "cardNumber": "4000000000000101",
+      "cvc": " ",
+      "expireMon": "11",
+      "expireYear": "2017",
+      "name": "userForTestPreOrder",
+      "line1": "AddressfortestLine1",
+      "line2": "",
+      "city": "CityTest",
+      "state": "StateTest",
+      "postalCode": "96032",
+      "country": "United States",
+      "isAgree": true
+    }
+  },
+  {
+    "description": "Fail Order: card_declined",
+    "isExpectSuccess":false,
+    "isJunmpToResultPage":true,
+    "expectedErrorList":["002: card has been declined"],
+    "page_data": {
+      "emailAddress": "yangfan01@zerozero.cn",
+      "quantity": 1,
+      "cardNumber": "4000000000000002",
+      "cvc": "1234",
+      "expireMon": "11",
+      "expireYear": "2017",
+      "name": "userForTestPreOrder",
+      "line1": "AddressfortestLine1",
+      "line2": "",
+      "city": "CityTest",
+      "state": "StateTest",
+      "postalCode": "96032",
+      "country": "United States",
+      "isAgree": true
+    }
+  },
+  {
+    "description": "Fail Order: card_declined",
+    "isExpectSuccess":false,
+    "isJunmpToResultPage":true,
+    "expectedErrorList":["002: card has been declined"],
+    "page_data": {
+      "emailAddress": "yangfan01@zerozero.cn",
+      "quantity": 1,
+      "cardNumber": "4100000000000019",
+      "cvc": "1234",
+      "expireMon": "11",
+      "expireYear": "2017",
+      "name": "userForTestPreOrder",
+      "line1": "AddressfortestLine1",
+      "line2": "",
+      "city": "CityTest",
+      "state": "StateTest",
+      "postalCode": "96032",
+      "country": "United States",
+      "isAgree": true
+    }
+  },
+  {
+    "description": "Fail Order: incorrect_cvc",
+    "isExpectSuccess":false,
+    "isJunmpToResultPage":true,
+    "expectedErrorList":["amount dismatch ???????? "],
+    "page_data": {
+      "emailAddress": "yangfan01@zerozero.cn",
+      "quantity": 1,
+      "cardNumber": "4000000000000127",
+      "cvc": "1234",
+      "expireMon": "11",
+      "expireYear": "2017",
+      "name": "userForTestPreOrder",
+      "line1": "AddressfortestLine1",
+      "line2": "",
+      "city": "CityTest",
+      "state": "StateTest",
+      "postalCode": "96032",
+      "country": "United States",
+      "isAgree": true
+    }
+  },
+  {
+    "description": "Fail Order: expired_card",
+    "isExpectSuccess":false,
+    "isJunmpToResultPage":true,
+    "expectedErrorList":["amount dismatch ???????? "],
+    "page_data": {
+      "emailAddress": "yangfan01@zerozero.cn",
+      "quantity": 1,
+      "cardNumber": "4000000000000069",
+      "cvc": "1234",
+      "expireMon": "11",
+      "expireYear": "2017",
+      "name": "userForTestPreOrder",
+      "line1": "AddressfortestLine1",
+      "line2": "",
+      "city": "CityTest",
+      "state": "StateTest",
+      "postalCode": "96032",
+      "country": "United States",
+      "isAgree": true
+    }
+  },
+  {
+    "description": "Fail Order: invalid card",
+    "isExpectSuccess":false,
+    "isJunmpToResultPage":false,
+    "expectedErrorList":["Please enter a valid credit card number."],
+    "page_data": {
+      "emailAddress": "yangfan01@zerozero.cn",
+      "quantity": 1,
+      "cardNumber": "4000000000000119",
+      "cvc": "1234",
+      "expireMon": "11",
+      "expireYear": "2017",
+      "name": "userForTestPreOrder",
+      "line1": "AddressfortestLine1",
+      "line2": "",
+      "city": "CityTest",
+      "state": "StateTest",
+      "postalCode": "96032",
+      "country": "United States",
+      "isAgree": true
+    }
+  }
+]

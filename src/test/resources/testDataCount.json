@@ -1,0 +1,134 @@
+[
+  {
+    "description": "Test Order Count is zero",
+    "isExpectSuccess":false,
+    "isJunmpToResultPage":false,
+    "expectedErrorList":[],
+    "page_data": {
+      "emailAddress": "yangfan01@zerozero.cn",
+      "quantity": "0",
+      "cardNumber": "4242424242424242",
+      "cvc": "896",
+      "expireMon": "11",
+      "expireYear": "2017",
+      "name": "userForTestPreOrder",
+      "line1": "AddressfortestLine1",
+      "line2": "",
+      "city": "CityTest",
+      "state": "StateTest",
+      "postalCode": "96032",
+      "country": "United States",
+      "isAgree": true
+    }
+  },
+  {
+    "description": "Test Order Count less than zero",
+    "isExpectSuccess":false,
+    "isJunmpToResultPage":false,
+    "expectedErrorList":[],
+    "page_data": {
+      "emailAddress": "yangfan01@zerozero.cn",
+      "quantity": "-1",
+      "cardNumber": "4242424242424242",
+      "cvc": "896",
+      "expireMon": "11",
+      "expireYear": "2017",
+      "name": "userForTestPreOrder",
+      "line1": "AddressfortestLine1",
+      "line2": "",
+      "city": "CityTest",
+      "state": "StateTest",
+      "postalCode": "96032",
+      "country": "United States",
+      "isAgree": true
+    }
+  },
+  {
+    "description": "Test Order Count more than 10",
+    "isExpectSuccess":false,
+    "isJunmpToResultPage":false,
+    "expectedErrorList":[],
+    "page_data": {
+      "emailAddress": "yangfan01@zerozero.cn",
+      "quantity": "20",
+      "cardNumber": "4242424242424242",
+      "cvc": "896",
+      "expireMon": "11",
+      "expireYear": "2017",
+      "name": "userForTestPreOrder",
+      "line1": "AddressfortestLine1",
+      "line2": "",
+      "city": "CityTest",
+      "state": "StateTest",
+      "postalCode": "96032",
+      "country": "United States",
+      "isAgree": true
+    }
+  },
+  {
+    "description": "Test Order Count is invalid",
+    "isExpectSuccess":false,
+    "isJunmpToResultPage":false,
+    "expectedErrorList":[],
+    "page_data": {
+      "emailAddress": "yangfan01@zerozero.cn",
+      "quantity": "sjfjsdf@#$",
+      "cardNumber": "4242424242424242",
+      "cvc": "896",
+      "expireMon": "11",
+      "expireYear": "2017",
+      "name": "userForTestPreOrder",
+      "line1": "AddressfortestLine1",
+      "line2": "",
+      "city": "CityTest",
+      "state": "StateTest",
+      "postalCode": "96032",
+      "country": "United States",
+      "isAgree": true
+    }
+  },
+  {
+    "description": "Test Order Count is null",
+    "isExpectSuccess":false,
+    "isJunmpToResultPage":false,
+    "expectedErrorList":[],
+    "page_data": {
+      "emailAddress": "yangfan01@zerozero.cn",
+      "quantity": "   ",
+      "cardNumber": "4242424242424242",
+      "cvc": "896",
+      "expireMon": "11",
+      "expireYear": "2017",
+      "name": "userForTestPreOrder",
+      "line1": "AddressfortestLine1",
+      "line2": "",
+      "city": "CityTest",
+      "state": "StateTest",
+      "postalCode": "96032",
+      "country": "United States",
+      "isAgree": true
+    }
+  },
+  {
+    "description": "Test Order Count is 2",
+    "isExpectSuccess":true,
+    "isJunmpToResultPage":true,
+    "expectedErrorList":[],
+    "page_data": {
+      "emailAddress": "yangfan01@zerozero.cn",
+      "quantity": "2",
+      "cardNumber": "4242424242424242",
+      "cvc": "896",
+      "expireMon": "11",
+      "expireYear": "2017",
+      "name": "userForTestPreOrder",
+      "line1": "AddressfortestLine1",
+      "line2": "",
+      "city": "CityTest",
+      "state": "StateTest",
+      "postalCode": "96032",
+      "country": "United States",
+      "isAgree": true
+    }
+  }
+]
